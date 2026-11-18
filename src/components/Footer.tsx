@@ -19,7 +19,16 @@ export default function Footer() {
           {TEAM.map((m) => (
             <li key={m.name}>
               <span className="role">{m.role}</span>
-              <strong>{m.name}</strong>
+              <a
+                className="linkedin-link"
+                href={m.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${m.name} on LinkedIn (opens in a new tab)`}
+              >
+                <strong>{m.name}</strong>
+                <span className="linkedin-badge" aria-hidden="true">in</span>
+              </a>
             </li>
           ))}
         </ul>

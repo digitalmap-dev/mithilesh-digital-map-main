@@ -88,3 +88,9 @@ h1 em{font-style:normal;color:var(--teal)}
   .cta{width:100%;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){.badge:before{animation:none}}
+
+/* --- LinkedIn links on team names --- */
+.linkedin-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:inherit}
+.linkedin-badge{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:3px;background:#0a66c2;color:#fff;font:700 10px/1 Arial,sans-serif;letter-spacing:0;text-transform:none}
+.linkedin-link:hover strong,.linkedin-link:focus-visible strong{text-decoration:underline;text-underline-offset:3px}
+.linkedin-link:focus-visible{outline:2px solid #fff;outline-offset:3px}
